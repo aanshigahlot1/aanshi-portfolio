@@ -29,7 +29,8 @@ import netlifyLogo from './assets/tech_logo/netlify.png';
 
 // ================= PROJECT IMAGES =================
 import streetbaseImg from './assets/work_logo/cm.png';
-import portfolioImg from './assets/work_logo/web_dig.png';
+import portfolioImg from './assets/work_logo/portfolio.png';
+import retrivoLogo from './assets/work_logo/RETRIVO_.png';
 
 // ================= EXPERIENCE LOGO =================
 import infosysLogo from './assets/company_logo/webverse_logo.png';
@@ -187,6 +188,22 @@ export const projects = [
     github: "https://github.com/aanshigahlot1/portfolio",
     webapp: "",
   },
+  {
+  id: 2,
+  title: "Retrivo - Lost & Found Application",
+  description:
+    "A modern lost and found web application where users can report lost items, post found items, and connect securely to recover belongings. Built with a clean UI and real-time interactions to improve user experience.",
+  image: retrivoLogo,
+  tags: [
+    "React JS",
+    "Tailwind CSS",
+    "Firebase",
+    "Cloudinary",
+    "EmailJS",
+  ],
+  github: "https://github.com/aanshigahlot1/RETRIVO_",
+  webapp: "https://aanshigahlot1.github.io/RETRIVO_/",
+},
 ];
 
 
