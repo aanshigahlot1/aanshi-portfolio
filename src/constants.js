@@ -212,7 +212,7 @@ export const education = [
     img: mmmutLogo,
     school: "Madan Mohan Malaviya University of Technology",
     date: "2023 – 2027",
-    CGPA: "8.39",
+    CGPA: "8.59",
     desc: "Pursuing B.Tech in Computer Science and Engineering with a focus on full-stack development and machine learning.",
     degree: "B.Tech – Computer Science and Engineering",
   },

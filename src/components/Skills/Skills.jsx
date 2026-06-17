@@ -6,7 +6,7 @@ import Tilt from "react-parallax-tilt";
 const Skills = () => (
   <section
     id="skills"
-    className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom"
+    className="py-24 pb-24 px-[8vw] md:px-[5vw] lg:px-[8vw] xl:px-[20vw] font-sans bg-skills-gradient clip-path-custom"
   >
     {/* Section Title */}
     <div className="text-center mb-8">
@@ -19,7 +19,7 @@ const Skills = () => (
     </div>
 
     {/* Skill Categories */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-10">
       {SkillsInfo.map((category) => (
         <Tilt
           key={category.title}
@@ -31,29 +31,33 @@ const Skills = () => (
           gyroscope={true}
           className="w-full"
         >
-          <div className="bg-gray-900 backdrop-blur-md px-4 py-6 rounded-2xl border border-white h-full shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]">
-            
-            <h3 className="text-xl sm:text-2xl font-semibold text-gray-400 mb-4 text-center">
+          <div className="bg-gray-900 backdrop-blur-md px-3 py-5 rounded-2xl border border-white h-full shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]">
+
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-400 mb-3 text-center">
               {category.title}
             </h3>
 
-            {/* Skill Items - 2 cols mobile, 3 cols desktop */}
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 w-full">
+            {/* 2 cols on mobile, 3 cols from md onwards */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-2 w-full">
               {category.skills.map((skill) => (
                 <div
                   key={skill.name}
                   className="flex flex-row items-center gap-2
                     border border-gray-700 rounded-xl
-                    py-2 px-3 min-h-[48px] w-full"
+                    py-2 px-2 min-h-[44px] w-full overflow-hidden"
                 >
                   <img
                     src={skill.logo}
                     alt={skill.name}
-                    className="w-6 h-6 flex-shrink-0"
+                    className="w-5 h-5 flex-shrink-0"
                   />
                   <span
-                    className="text-gray-300 leading-tight min-w-0"
-                    style={{ fontSize: "clamp(9px, 1.8vw, 13px)", wordBreak: "keep-all", overflowWrap: "normal" }}
+                    className="text-gray-300 leading-tight min-w-0 flex-1"
+                    style={{
+                      fontSize: "clamp(9px, 1.4vw, 12px)",
+                      wordBreak: "keep-all",
+                      overflowWrap: "normal",
+                    }}
                   >
                     {skill.name}
                   </span>
