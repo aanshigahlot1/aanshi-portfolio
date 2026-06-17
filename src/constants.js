@@ -221,7 +221,7 @@ export const education = [
     img: vpsLogo,
     school: "BasuBaral Saraswati Vihar Senior Secondary School",
     date: "Class XII (CBSE)",
-    grade: "82.2%",
+    grade: "82.2%",          // ✅ changed from CGPA to grade
     desc: "Completed Class XII with PCM under CBSE board.",
     degree: "Senior Secondary (PCM)",
   },
@@ -230,7 +230,7 @@ export const education = [
     img: gulabraiLogo,
     school: "Gulabrai Montessori Senior Secondary School",
     date: "Class X (CBSE)",
-    grade: "94.2%",
+    grade: "94.2%",          // ✅ changed from CGPA to grade
     desc: "Completed Class X with excellent academic performance.",
     degree: "Secondary School (Class X)",
   },
